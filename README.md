@@ -49,5 +49,41 @@ The dataset typically includes the following fields:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/dc-affordable-housing-analysis.git
-   cd dc-affordable-housing-analysis
+   git clone https://github.com/WiseTofu/TSADataScienceVA21173-1.git
+   cd TSADataScienceVA21173-1
+2. **Set up Python environment**
+   ```bash
+   # Create virtual environment
+   python3 -m venv venv
+   
+   # Activate virtual environment
+   # On macOS/Linux:
+   source venv/bin/activate
+   # On Windows:
+   .\venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install pandas numpy matplotlib seaborn
+   ```
+
+4. **Run the analysis**
+   ```bash
+   python affhous.py
+   ```
+
+## 📊 Output
+
+The script will:
+- Display AMI distribution percentages by ward
+- Show total affordable units per ward
+- Generate visualizations:
+  - Stacked bar chart of AMI levels by ward
+  - Bar chart of total affordable units by ward
+
+## 📝 Notes
+
+- Requires Python 3.9 or higher
+- Make sure `Affordable_Housing.csv` is in the project root directory
+- Generated plots will appear in a new window
