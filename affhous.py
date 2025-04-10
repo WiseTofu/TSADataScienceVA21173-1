@@ -210,13 +210,7 @@ def analyze_housing_patterns():
     print("Cluster Statistics:")
     print(cluster_stats)
 
-if __name__ == "__main__":
-    try:
-        # Check if data file exists
-        if not os.path.exists('Affordable_Housing.csv'):
-            print("Error: Affordable_Housing.csv not found in current directory")
-            sys.exit(1)
-            
+if __name__ == "__main__":    
         print("Starting affordable housing analysis...")
         # Generate all analyses
         plot_ami_distribution()
@@ -227,6 +221,3 @@ if __name__ == "__main__":
         predict_housing_trends()
         analyze_housing_patterns()
         print("\nAnalysis completed successfully!")
-        
-    except Exception as e:
-        print(f"An error occurred: {str(e)}")
