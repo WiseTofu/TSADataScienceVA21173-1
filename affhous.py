@@ -33,10 +33,10 @@ total_units = df.groupby('MAR_WARD')['TOTAL_AFFORDABLE_UNITS'].sum()
 
 # Print statistics
 print("\nPercentage Distribution of Affordable Units by AMI Level in Each Ward:")
-print("=" * 70)
+print("=" * 60)
 print(ami_percentages.round(1).to_string())
 print("\nTotal Number of Affordable Units in Each Ward:")
-print("=" * 40)
+print("=" * 30)
 print(total_units.to_string())
 print("\n")
 
